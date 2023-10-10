@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days Of React Challenge</title>
+</head>
+<body>
+    <div class="root"></div>
+
+     <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+  
+        //to get root element for html
+        const rootElement = document.querySelector('.root')
+
+        //to create a jsx element
+        const header = (
+          <header>
+            <h1>Welcome to 30 days of React</h1>
+            <h2>Getting Started React</h2>
+            <h3>JavaScript Library</h3>
+            <p>Asabeneh Yetayeh</p>
+            <small>Oct 2, 2023</small>
+          </header>
+        ) 
+        
+        //render JSX element using ReactDOM
+        ReactDOM.render(header, rootElement)
+    </script>
+</body>
+</html>
